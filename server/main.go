@@ -195,7 +195,7 @@ func doMain() error {
 	}
 	trustDomain := os.Getenv("TRUST_DOMAIN")
 	if trustDomain == "" {
-		trustDomain = "spiffe-user-demo.herokuapp.com"
+		trustDomain = "spiffe-user-demo.fly.dev"
 	}
 
 	oidcProvider, err := oidc.NewProvider(context.Background(), oidcProviderUrl)

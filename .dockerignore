@@ -1,0 +1,7 @@
+# flyctl launch added from .gitignore
+**/.idea
+**/*.iml
+**/.env
+
+server/server
+spiffe-user-demo

@@ -12,8 +12,8 @@ Using [spiffe-watcher](https://github.com/spiffe/go-spiffe/tree/master/v2/exampl
 
 ```bash
 $ spiffe-watcher 
-2020/09/27 15:28:17 jwt bundle updated "spiffe-user-demo.herokuapp.com": {"keys":[{"kty":"EC","kid":"1","crv":"P-256","x":"i5bOW6bqc_D-KV4-O9TIvt_5VJvPpqnolQCgcwrREz8","y":"-6SOM0wF813sH_fMW-8iQGdNNIxryTjeszYBDGu78c4"}]}
-2020/09/27 15:28:17 SVID updated for "spiffe://spiffe-user-demo.herokuapp.com/ianhaken@gmail.com": 
+2020/09/27 15:28:17 jwt bundle updated "spiffe-user-demo.fly.dev": {"keys":[{"kty":"EC","kid":"1","crv":"P-256","x":"i5bOW6bqc_D-KV4-O9TIvt_5VJvPpqnolQCgcwrREz8","y":"-6SOM0wF813sH_fMW-8iQGdNNIxryTjeszYBDGu78c4"}]}
+2020/09/27 15:28:17 SVID updated for "spiffe://spiffe-user-demo.fly.dev/ianhaken@gmail.com": 
 -----BEGIN CERTIFICATE-----
 MIIBszCCAVqgAwIBAgISAbDYa/82lma7zLepQuml5TzVMAoGCCqGSM49BAMCMDUx
 EDAOBgNVBAoTB0FjbWUgQ28xITAfBgNVBAMTGFVzZXIgU1BJRkZFIERlbW8gUm9v
@@ -56,12 +56,12 @@ CA_CERTIFICATE=
 # Base64 PKCS8 encoded private key of the CA certificate above
 CA_PRIVATE_KEY=
 # The URL of your service. This is used to build the redirect URL with the OIDC service provider
-SERVICE_URL=https://spiffe-user-demo.herokuapp.com
+SERVICE_URL=https://spiffe-user-demo.fly.dev
 # The OIDC service provider to use.
 OIDC_PROVIDER_URL=https://accounts.google.com
 # The OIDC client id and secret
 OIDC_CLIENT_ID=
 OIDC_CLIENT_SECRET=
 # The trust domain that will be used to build the SPIFFE IDs returned by the server
-TRUST_DOMAIN=spiffe-user-demo.herokuapp.com
+TRUST_DOMAIN=spiffe-user-demo.fly.dev
 ```

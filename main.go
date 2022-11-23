@@ -22,7 +22,7 @@ func main() {
 	logLevel := flagSet.String("logLevel", "INFO", "Log verbosity level. One of: TRACE, DEBUG, INFO, WARN, ERROR, FATAL, PANIC")
 	refreshFrequency := flagSet.String("refreshFrequency", "1h", "Frequency with which certificates should be refreshed.")
 	var serviceHost string
-	flagSet.StringVar(&serviceHost, "hostname", "https://spiffe-user-demo.herokuapp.com", "The hostname of the service to login to and retrieve SVIDs from.")
+	flagSet.StringVar(&serviceHost, "hostname", "https://spiffe-user-demo.fly.dev", "The hostname of the service to login to and retrieve SVIDs from.")
 
 	err := flagSet.Parse(os.Args[1:])
 	if err != nil {
